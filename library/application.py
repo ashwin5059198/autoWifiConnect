@@ -1,8 +1,10 @@
+# import necessary modules
 import os
 import re
 from time import sleep
 
 
+# refresh connections
 def refresh():
 	print(">>> Refreshing connections...")
 	os.system(".\\resources\\wlanrefresh.exe")
@@ -25,6 +27,7 @@ class WiFi:
 	def __init__(self):
 		self.saved_profiles = get_saved_profiles()
 		self.available = get_available_profiles()
+		# initialise name of preferred profile here, can be modified later also
 		self.preferred_ssid = 'wow_momo'
 
 	def disconnect(self):
