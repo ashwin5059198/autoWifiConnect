@@ -1,0 +1,7 @@
+# virtual environment
+/venv/*
+
+# activation script for virtual environment
+/activate.bat
+
+
