@@ -2,8 +2,7 @@
 import os
 import re
 from time import sleep
-from colorama import *
-
+from colorama import init
 
 # print(Fore.RED + 'some red text')
 # print(Back.GREEN + 'and with a green background')
@@ -71,8 +70,7 @@ class WiFi:
 
 
 def main():
-	init()  # initialise colorama module
-
+	init(autoreset=True)
 	print("")
 	refresh()
 	driver = WiFi()
